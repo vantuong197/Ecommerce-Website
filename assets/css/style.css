@@ -1,0 +1,265 @@
+html{
+    font-size: 65%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.navbar ul li img{
+    width: 30px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.container{
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.container-header{
+    margin: auto;
+    max-width: 1300px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 2.5rem 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    max-width: 100%;
+}
+.col-4{
+    flex-basis: 25%;
+    min-width: 250px;
+    padding: 10px;
+    transition: transform 0.5s;
+    margin-bottom: 60px;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.col-4 img{
+    max-width: 100%;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+.content{
+    max-width: 1080px;
+    margin: 70px auto;
+}
+.content-categorys{
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.product-title{
+    text-align: center;
+    margin: 0 auto 80px;
+    line-height: 60px;
+    font-size: 2.4rem;
+    color: #555555;
+    position: relative;
+}
+.product-title::after{
+    content: '';
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #ff523b;
+    position: absolute;
+    
+}
+.product-item{
+    padding: 0 25px;
+}
+.item-detail p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.offer{
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.offer-container{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+}
+.offer-img{
+    padding: 50px;
+}
+
+.offer-detail .exclusivetext, .offer-detail .brand-detail{
+    font-size: 1.65rem;
+}
+
+.offer-detail .brand-name{
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.container__buyer-comment{
+    padding-top: 100px;
+    
+}
+.fa{
+    color: #ff523b;
+}
+.testimonial{
+    text-align: center;
+    max-width: 1080px;
+    margin: 50px auto;
+}
+
+.testimonial-item{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial-item:hover{
+    transform: translateY(-10px);
+}
+.testimonial-icon i{
+    font-size: 5rem;
+}
+
+.testimonial-comment p{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #555555;
+    margin: 12px 0;
+    line-height: 1.7;
+}
+.testimonial-rating i{
+    font-size: 1.5rem;
+}
+
+.testimonial-buyer{
+    margin: 12px 0;
+}
+.buyer-img img{
+    margin-top: 12px;
+    border-radius: 50%;
+    width: 5rem;
+}
+
+.buyer-name h5 {
+    font-size: 1.6rem;
+    color: #555555;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.footer-container{
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 1200px;
+}
+.footer-container h3{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.footer-container .coppy-right{
+    margin: 0;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 30px;
+    
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.footer-col-3 li, .footer-col-4 li, .footer-col-4 a, .footer-col-3 a{
+    list-style-type: none;
+    color: #555;
+    font-size: 1.6rem;
+}
+.footer-col-1 .footer-logo img{
+    width: 120px;
+    /* margin-top: 30px; */
+}
+.footer-col-2 .footer-logo img{
+    width: 180px;
+}
