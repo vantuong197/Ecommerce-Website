@@ -430,19 +430,24 @@ p{
 }
 
 #indicator{
-    width: 30%;
+    width: 25%;
     position: absolute;
     height: 3px;
     border: none;
     background-color: #e9412a;
-    left: 55px;
+    left: 75px;
     transition: transform 0.5s;
 }
 
 .account-form__name span{
     cursor: pointer;
+    font-weight: bold;
+    color: #555;
 }
 .account-form_login span{
     font-size: 12px;
     cursor: pointer;
+}
+.container-form{
+    padding: 60px;
 }

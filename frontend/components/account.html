@@ -36,32 +36,32 @@
                 <div class="logo-img col-2">
                     <img src="../assets/images/image1.png" alt="">
                 </div>
-                <div class="col-2">
+                <div class="col-2 container-form">
                     <div class="account-form">
                         <div class="account-form__name">
                             <span class="form-name_login" onclick="login()">Login</span>
                             <span class="form-name_register" onclick="register()">Register</span>
                             <hr id="indicator">
                         </div>
-                        <div class="account-form_login">
+                        <div class="account-form_login" id="login-form">
                             <form action="" method="POST">
-                                <input type="text" placeholder="Username">
+                                <input class="username" type="text" placeholder="Username">
                                 <span class="error"></span>
-                                <input type="password" placeholder="Password">
+                                <input class="password" type="password" placeholder="Password">
                                 <span class="error"></span>
-                                <input class="btn" type="submit" value="Login">
+                                <input class="btn submit" type="submit" value="Login">
                                 <span>Forgot password?</span>
                             </form>
                         </div>
-                        <div class="account-form_register">
+                        <div class="account-form_register" id="register-form">
                             <form action="" method="POST">
-                                <input type="text" placeholder="Username">
+                                <input class="username" type="text" placeholder="Username">
                                 <span class="error"></span>
-                                <input type="email" placeholder="Email">
+                                <input class="email" type="email" placeholder="Email">
                                 <span class="error"></span>
-                                <input type="password" placeholder="Password">
+                                <input class="password" type="password" placeholder="Password">
                                 <span class="error"></span>
-                                <input class="btn" type="submit" value="Register">
+                                <input class="btn submit" type="submit" value="Register">
                             </form>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
     }
 
     function register() {
-        indicatorEl.style.transform = 'translateX(80px)';
+        indicatorEl.style.transform = 'translateX(60px)';
         loginFormEl.style.transform = 'translateX(-300px)';
         registerFormEl.style.transform = 'translateX(-300px)';
     }
