@@ -4,61 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>RedStore | Ecommere Websize Design</title>
     <script src="https://kit.fontawesome.com/a9daaac82c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+
+    <!-- Header -->
+    <div class="container products-details-header">
         <div class="container-header">
             <div class="navbar">
                 <div class="logo">
-                    <img src="../frontend/assets/images/logo.png" alt="" width="125px">
+                    <img src="../assets/images/logo.png" alt="" width="125px">
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="./components/products.html">Products</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Account</a></li>
-                        <li><a href="" class="cart-logo"><img src="../frontend/assets/images/cart.png" alt="">
-                            <span class="cart-num">0</span>
-                        </a></li>
+                        <li><a href=""  class="cart-logo"><img src="../assets/images/cart.png" alt="">
+                            <span class="cart-num">0</span></a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give Your WorkOut <br>A New Style!</h1>
-                    <p>Succes isn't always about greatness. It's about consistency. Consistent <br>hard work gains success. Greatness will come.</p>
-                    <a href="" class="btn">Explore Now &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="../frontend/assets/images/image1.png" alt="">
-                </div>
-            </div>
         </div>
     </div>
+    <!-- Content -->
     <div class="content">
-        <div class="content-categorys row">
-            <div class="category-item col-3">
-                <img src="./assets/images/category-1.jpg" alt="">
-            </div>
-            <div class="category-item col-3">
-                <img src="./assets/images/category-2.jpg" alt="">
-            </div>
-            <div class="category-item col-3">
-                <img src="./assets/images/category-3.jpg" alt="">
-            </div>
-        </div>
         <div class="content-products row">
-            <h2 class="product-title">Featured Products</h2>
+                <div class="row row-2">
+                    <h2 class="">All Products</h2>
+                    <select name="sort-select" id="sort-select">
+                        <option value="1">Sort by default</option>
+                        <option value="2">Sort by Price</option>
+                        <option value="3">Sort by Rating</option>
+                        <option value="4">Sort by Sale</option>
+                    </select>
+                </div>
             <div class="products-item row">
                 <div class="col-4">
                     <a href="./components/products-details.html">
                         <div class="item-img">
-                            <img src="./assets/images/product-1.jpg" alt="">
+                            <img src="../assets/images/product-1.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -76,7 +65,7 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-2.jpg" alt="">
+                            <img src="../assets/images/product-2.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -94,7 +83,7 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-3.jpg" alt="">
+                            <img src="../assets/images/product-3.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -112,7 +101,7 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-4.jpg" alt="">
+                            <img src="../assets/images/product-4.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -127,15 +116,10 @@
                         </div>
                     </a>
                 </div>
-            </div>
-        </div>
-        <div class="content-products row">
-            <h2 class="product-title">Latest Products</h2>
-            <div class="products-item row">
                 <div class="col-4">
-                    <a href="#">
+                    <a href="./components/products-details.html">
                         <div class="item-img">
-                            <img src="./assets/images/product-1.jpg" alt="">
+                            <img src="../assets/images/product-1.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -153,7 +137,7 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-2.jpg" alt="">
+                            <img src="../assets/images/product-2.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -171,7 +155,7 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-3.jpg" alt="">
+                            <img src="../assets/images/product-3.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -189,7 +173,25 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-4.jpg" alt="">
+                            <img src="../assets/images/product-4.jpg" alt="">
+                        </div>
+                        <div class="item-detail">
+                            <p>Red Printed T-Shirt</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star fa-sm" style="color: #ff523b;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #ff523b;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #ff523b;"></i>
+                                <i class="fa-solid fa-star fa-sm" style="color: #ff523b;"></i>
+                                <i class="fa-regular fa-star fa-sm" style="color: #ff523b;"></i>
+                            </div>
+                            <p>$50.00</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="./components/products-details.html">
+                        <div class="item-img">
+                            <img src="../assets/images/product-1.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -207,7 +209,7 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-5.jpg" alt="">
+                            <img src="../assets/images/product-2.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -225,7 +227,7 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-6.jpg" alt="">
+                            <img src="../assets/images/product-3.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -243,7 +245,7 @@
                 <div class="col-4">
                     <a href="#">
                         <div class="item-img">
-                            <img src="./assets/images/product-7.jpg" alt="">
+                            <img src="../assets/images/product-4.jpg" alt="">
                         </div>
                         <div class="item-detail">
                             <p>Red Printed T-Shirt</p>
@@ -258,117 +260,21 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
-                    <a href="#">
-                        <div class="item-img">
-                            <img src="./assets/images/product-8.jpg" alt="">
-                        </div>
-                        <div class="item-detail">
-                            <p>Red Printed T-Shirt</p>
-                            <div class="rating">
-                                <i class="fa-solid fa-star fa-sm" style="color: #ff523b;"></i>
-                                <i class="fa-solid fa-star fa-sm" style="color: #ff523b;"></i>
-                                <i class="fa-solid fa-star fa-sm" style="color: #ff523b;"></i>
-                                <i class="fa-solid fa-star fa-sm" style="color: #ff523b;"></i>
-                                <i class="fa-regular fa-star fa-sm" style="color: #ff523b;"></i>
-                            </div>
-                            <p>$50.00</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="offer">
-        <div class="offer-container">
-            <div class="row">
-                <div class="offer-img col-2">
-                    <img src="./assets/images/exclusive.png" alt="">
-                </div>
-                <div class="offer-detail col-2">
-                    <p class="exclusivetext">Exclusive Available on RedStore</p>
-                    <h1 class="brand-name">Smart Band 4</h1>
-                    <p class="brand-detail">The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</p>
-                    <a href="" class="btn">Buy Now &#8594;</a>
+
+                <div class="products-pagination">
+                    <div class="producst-pagination__number selected">1</div>
+                    <div class="producst-pagination__number">2</div>
+                    <div class="producst-pagination__number">3</div>
+                    <div class="producst-pagination__number">4</div>
+                    <div class="producst-pagination__number">...</div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container__buyer-comment">
-        <div class="testimonial">
-            <div class="row">
-                <div class="col-3 testimonial-item">
-                    <div class="testimonial-icon">
-                        <i class="fa fa-quote-left"></i>
-                    </div>
-                    <div class="testimonial-comment">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="testimonial-rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <div class="testimonial-buyer">
-                        <div class="buyer-img">
-                            <img src="./assets/images/user-1.png" alt="">
-                        </div>
-                        <div class="buyer-name">
-                            <h5>Sean Parker</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 testimonial-item">
-                    <div class="testimonial-icon">
-                        <i class="fa fa-quote-left"></i>
-                    </div>
-                    <div class="testimonial-comment">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="testimonial-rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <div class="testimonial-buyer">
-                        <div class="buyer-img">
-                            <img src="./assets/images/user-2.png" alt="">
-                        </div>
-                        <div class="buyer-name">
-                            <h5>Dany Faker</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 testimonial-item">
-                    <div class="testimonial-icon">
-                        <i class="fa fa-quote-left"></i>
-                    </div>
-                    <div class="testimonial-comment">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="testimonial-rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                    </div>
-                    <div class="testimonial-buyer">
-                        <div class="buyer-img">
-                            <img src="./assets/images/user-3.png" alt="">
-                        </div>
-                        <div class="buyer-name">
-                            <h5>Selena Gomez</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+    <!-- Footer -->
+
 
     <div class="footer">
         <div class="footer-container">
@@ -377,13 +283,13 @@
                     <h3>Download our App</h3>
                     <p>Download App for Android and ios mobile phone.</p>
                     <div class="footer-logo">
-                        <img src="./assets/images/app-store.png" alt="">
-                        <img src="./assets/images/play-store.png" alt="">
+                        <img src="../assets/images/app-store.png" alt="">
+                        <img src="../assets/images/play-store.png" alt="">
                     </div>
                 </div>
                 <div class="footer-col-2">
                     <div class="footer-logo">
-                        <img src="./assets/images/logo.png" alt="">
+                        <img src="../assets/images/logo.png" alt="">
                     </div>  
                     <div class="footer-text">
                         <p>Our Purpose Is To Sustainably Make th Pleasure and Benefits of Sports Accessible to the Many.</p>
@@ -412,7 +318,6 @@
             <p class="coppy-right">Copytight 2023 - Tran Van Tuong</p>
         </div>
     </div>
+</body> 
 
-    
-</body>
 </html>
