@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/a9daaac82c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header -->
     <div class="container products-details-header">
         <div class="container-header">
             <div class="navbar">
@@ -21,7 +22,7 @@
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <li><a href="">Account</a></li>
                         <li><a href=""  class="cart-logo"><img src="../assets/images/cart.png" alt="">
                             <span class="cart-num">0</span></a></li>
                     </ul>
@@ -29,46 +30,47 @@
             </div>
         </div>
     </div>
-    <div class="container-single-item row">
-        <div class="col-2">
-            <div class="single-item-bigimg">
-                <img id="Product-img" src="../assets/images/gallery-1.jpg" alt="">
+    <div class="container">
+        <div class="container-account">
+            <div class="row">
+                <div class="logo-img col-2">
+                    <img src="../assets/images/image1.png" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="account-form">
+                        <div class="account-form__name">
+                            <span class="form-name_login" onclick="login()">Login</span>
+                            <span class="form-name_register" onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <div class="account-form_login">
+                            <form action="" method="POST">
+                                <input type="text" placeholder="Username">
+                                <span class="error"></span>
+                                <input type="password" placeholder="Password">
+                                <span class="error"></span>
+                                <input class="btn" type="submit" value="Login">
+                                <span>Forgot password?</span>
+                            </form>
+                        </div>
+                        <div class="account-form_register">
+                            <form action="" method="POST">
+                                <input type="text" placeholder="Username">
+                                <span class="error"></span>
+                                <input type="email" placeholder="Email">
+                                <span class="error"></span>
+                                <input type="password" placeholder="Password">
+                                <span class="error"></span>
+                                <input class="btn" type="submit" value="Register">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="single-item-smallimg row">
-                <div class="single-item-smallimg-col">
-                    <img class="small-img" src="../assets/images/gallery-1.jpg" alt="">
-                </div>
-                <div class="single-item-smallimg-col">
-                    <img class="small-img" src="../assets/images/gallery-2.jpg" alt="">
-                </div>
-                <div class="single-item-smallimg-col">
-                    <img class="small-img" src="../assets/images/gallery-3.jpg" alt="">
-                </div>
-                <div class="single-item-smallimg-col">
-                    <img class="small-img" src="../assets/images/gallery-4.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="col-2 container-details">
-            <p>Home/T-Shirt</p>
-            <h4>$50.00</h4>
-            <h1>Red Printed T-Shirt by HRX</h1>
-            <select name="select" id="size-select">
-                <option value="">Select Size</option>
-                <option value="">XXL</option>
-                <option value="">XL</option>
-                <option value="">Large</option>
-                <option value="">Medium</option>
-                <option value="">Small</option>
-            </select>
-            <div class="container-details__btn">
-                <input type="number" value="1">
-                <button class="btn">Add to Cart</button>
-            </div>
-            <h3>Product Details <i class="fa fa-indent"></i></h3>
-            <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt. Team it with a pair of shorts for your morning workout or a denims for an evening out with the guys.</p>
         </div>
     </div>
+
+    <!-- Footer -->
     <div class="footer">
         <div class="footer-container">
             <div class="row">
@@ -112,15 +114,24 @@
         </div>
     </div>
 </body> 
-
 <script>
-    let bigImg = document.querySelector('#Product-img');
-    let smallImgs = document.querySelectorAll('.small-img');
-    smallImgs.forEach(img =>{
-        img.addEventListener('click', (e) =>{
-            bigImg.src = img.src;
-        })
-    })
+    let indicatorEl = document.querySelector('#indicator')
+    let loginFormEl = document.querySelector('.account-form_login');
+    let registerFormEl = document.querySelector('.account-form_register');
+
+    function login() {
+        indicatorEl.style.transform = 'translateX(0px)';
+        registerFormEl.style.transform = 'translateX(0px)';
+        loginFormEl.style.transform = 'translateX(0px)';
+
+    }
+
+    function register() {
+        indicatorEl.style.transform = 'translateX(80px)';
+        loginFormEl.style.transform = 'translateX(-300px)';
+        registerFormEl.style.transform = 'translateX(-300px)';
+    }
+
 
 </script>
 </html>

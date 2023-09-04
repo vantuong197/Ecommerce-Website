@@ -6,7 +6,7 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 
@@ -116,6 +116,7 @@ p{
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
+    cursor: pointer;
 }
 .content{
     max-width: 1080px;
@@ -374,4 +375,74 @@ p{
     justify-content: space-between;
     width: 100%;
     padding: 20px;
+}
+
+
+/* Account page css */
+
+.logo-img{
+    width: 100%;
+}
+
+.container-account{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.account-form{
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+.account-form form{
+    width: 300px;
+    padding: 0 20px;
+}
+.account-form_login{
+    position: absolute;
+    /* right: 300px; */
+    transition: transform .5s;
+    top: 130px;
+}
+
+.account-form_register{
+    position: absolute;
+    left: 300px;
+    transition: transform .5s;
+    top: 130px;
+}
+
+.account-form_login input, .account-form_register input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.account-form_login{
+}
+
+#indicator{
+    width: 30%;
+    position: absolute;
+    height: 3px;
+    border: none;
+    background-color: #e9412a;
+    left: 55px;
+    transition: transform 0.5s;
+}
+
+.account-form__name span{
+    cursor: pointer;
+}
+.account-form_login span{
+    font-size: 12px;
+    cursor: pointer;
 }
