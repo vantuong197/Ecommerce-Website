@@ -45,6 +45,10 @@ p{
 .container{
     background: radial-gradient(#fff, #ffd6d6);
 }
+
+.products-details-header{
+    background: #fff;
+}
 .container-header{
     margin: auto;
     max-width: 1300px;
@@ -262,4 +266,71 @@ p{
 }
 .footer-col-2 .footer-logo img{
     width: 180px;
+}
+
+
+/* Products details page css */
+
+.container-single-item {
+    max-width: 1080px;
+    margin: 80px auto;
+    padding: 50px;
+}
+
+.single-item-bigimg img{
+    width: 100%;
+    padding: 0;
+}
+.single-item-smallimg{
+    justify-content: space-between;
+}
+.single-item-smallimg-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-item-smallimg-col img{
+    padding: 0;
+}
+
+.container-details{
+    padding: 50px;
+}
+
+.container-details h4{
+    color: #555;
+    font-size: 2.2rem;
+}
+
+.container-details h3{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.container-details select,.container-details select option,.container-details input,.container-details button{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border: 1px solid #ff523b;
+    outline: none;
+}
+
+.container-details input{
+    width: 50px;
+    font-size: 1.8rem;
+    height: 40px;
+    display: inline-block;
+}
+
+.container-details button{
+    display: inline-block;
+    width: 125px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.container-details button:hover{
+    background-color: #e9412a;
 }
