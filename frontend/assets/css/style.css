@@ -456,3 +456,84 @@ p{
     cursor: unset !important;
     font-size: 12px;
 }
+
+/* Cart page css */
+
+.container-cart{
+    position: relative;
+    max-width: 1080px;
+    margin: 80px auto;
+}
+
+.cart-items{
+    border-collapse: collapse;
+    width: 100%;
+}
+.cart-items th{
+    background-color: #ff523b;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.item-infor{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-infor img{
+    width: 80px;
+    margin-right: 10px;
+}
+
+.item-infor__des small{
+    color: #555;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.item-infor__des a{
+    font-size: 1.2rem;
+    color: #ff523b;
+}
+
+
+.item-qty input{
+    width: 40px;
+    outline: #ff523b;
+    font-size: 1.2rem;
+    height: 30px;
+}
+
+.cart-header th:last-child, .item-subtotal{
+    text-align: right;
+}
+
+td{
+    padding: 5px;
+}
+
+.container-total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-total-price table{
+    width: 100%;
+    max-width: 400px;
+    border-top: 3px solid #ff523b;
+}
+
+.container-total-price table tr td:last-child{
+    text-align: right;
+}
+
+.order-btn{
+    display: flex;
+    align-items: flex-end;
+    width: 100px;
+    position: absolute;
+    right: 80px;
+}

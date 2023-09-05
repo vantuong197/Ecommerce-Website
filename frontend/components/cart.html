@@ -30,48 +30,95 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="container-account">
-            <div class="row">
-                <div class="logo-img col-2">
-                    <img src="../assets/images/image1.png" alt="">
-                </div>
-                <div class="col-2 container-form">
-                    <div class="account-form">
-                        <div class="account-form__name">
-                            <span class="form-name_login" onclick="login()">Login</span>
-                            <span class="form-name_register" onclick="register()">Register</span>
-                            <hr id="indicator">
+
+
+    <div class="cart-page">
+        <div class="container-cart">
+            <table class="cart-items">
+                <tr class="cart-header">
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <!-- Cart items -->
+                <tr>
+                    <td class="cart-item">
+                        <div class="item-infor">
+                            <img src="../assets/images/gallery-1.jpg" alt="">
+                            <div class="item-infor__des">
+                                <p>Red Printed Tshirt</p>
+                                <small>Price: $50.00</small>
+                                <a href="">Remove</a>
+                            </div>
                         </div>
-                        <div class="account-form_login" id="login-form">
-                            <form action="" method="POST">
-                                <input class="username" type="text" placeholder="Username" name="username">
-                                <span class="error"></span>
-                                <input class="password" type="password" placeholder="Password" name="password">
-                                <span class="error"></span>
-                                <input class="btn submit" type="submit" value="Login">
-                                <span>Forgot password?</span>
-                            </form>
+                    </td>
+                    <td class="item-qty">
+                        <input type="number" value="1">
+                    </td>
+                    <td class="item-subtotal">
+                        $50.00
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cart-item">
+                        <div class="item-infor">
+                            <img src="../assets/images/gallery-1.jpg" alt="">
+                            <div class="item-infor__des">
+                                <p>Red Printed Tshirt</p>
+                                <small>Price: $50.00</small>
+                                <a href="">Remove</a>
+                            </div>
                         </div>
-                        <div class="account-form_register" id="register-form">
-                            <form action="" method="POST">
-                                <input class="username" type="text" placeholder="Username" name="username">
-                                <span class="error"></span>
-                                <input class="email" type="email" placeholder="Email" name="email">
-                                <span class="error"></span>
-                                <input class="password" type="password" placeholder="Password" name="password">
-                                <span class="error"></span>
-                                <input class="password-repeat" type="password" placeholder="Confirm Password" name="confirm-pwd">
-                                <span class="error"></span>
-                                <input class="btn submit" type="submit" value="Register">
-                            </form>
+                    </td>
+                    <td class="item-qty">
+                        <input type="number" value="1">
+                    </td>
+                    <td class="item-subtotal">
+                        $50.00
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cart-item">
+                        <div class="item-infor">
+                            <img src="../assets/images/gallery-1.jpg" alt="">
+                            <div class="item-infor__des">
+                                <p>Red Printed Tshirt</p>
+                                <small>Price: $50.00</small>
+                                <a href="">Remove</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </td>
+                    <td class="item-qty">
+                        <input type="number" value="1">
+                    </td>
+                    <td class="item-subtotal">
+                        $50.00
+                    </td>
+                </tr>
+                
+            </table>
+
+
+            <div class="container-total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$235.00</td>
+                    </tr>
+                </table>
             </div>
+            <div class="btn order-btn">Order</div>
+            
         </div>
     </div>
-
     <!-- Footer -->
     <div class="footer">
         <div class="footer-container">
@@ -116,25 +163,4 @@
         </div>
     </div>
 </body> 
-<script>
-    let indicatorEl = document.querySelector('#indicator')
-    let loginFormEl = document.querySelector('.account-form_login');
-    let registerFormEl = document.querySelector('.account-form_register');
-
-    function login() {
-        indicatorEl.style.transform = 'translateX(0px)';
-        registerFormEl.style.transform = 'translateX(0px)';
-        loginFormEl.style.transform = 'translateX(0px)';
-
-    }
-
-    function register() {
-        indicatorEl.style.transform = 'translateX(60px)';
-        loginFormEl.style.transform = 'translateX(-300px)';
-        registerFormEl.style.transform = 'translateX(-300px)';
-    }
-    
-</script>
-
-<script src="account.js"></script>
 </html>
