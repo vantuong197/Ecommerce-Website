@@ -415,7 +415,7 @@ p{
     position: absolute;
     left: 300px;
     transition: transform .5s;
-    top: 130px;
+    top: 55px;
 }
 
 .account-form_login input, .account-form_register input {
@@ -450,4 +450,9 @@ p{
 }
 .container-form{
     padding: 60px;
+}
+.error{
+    color: red;
+    cursor: unset !important;
+    font-size: 12px;
 }

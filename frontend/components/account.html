@@ -45,9 +45,9 @@
                         </div>
                         <div class="account-form_login" id="login-form">
                             <form action="" method="POST">
-                                <input class="username" type="text" placeholder="Username">
+                                <input class="username" type="text" placeholder="Username" name="username">
                                 <span class="error"></span>
-                                <input class="password" type="password" placeholder="Password">
+                                <input class="password" type="password" placeholder="Password" name="password">
                                 <span class="error"></span>
                                 <input class="btn submit" type="submit" value="Login">
                                 <span>Forgot password?</span>
@@ -55,11 +55,13 @@
                         </div>
                         <div class="account-form_register" id="register-form">
                             <form action="" method="POST">
-                                <input class="username" type="text" placeholder="Username">
+                                <input class="username" type="text" placeholder="Username" name="username">
                                 <span class="error"></span>
-                                <input class="email" type="email" placeholder="Email">
+                                <input class="email" type="email" placeholder="Email" name="email">
                                 <span class="error"></span>
-                                <input class="password" type="password" placeholder="Password">
+                                <input class="password" type="password" placeholder="Password" name="password">
+                                <span class="error"></span>
+                                <input class="password-repeat" type="password" placeholder="Confirm Password" name="confirm-pwd">
                                 <span class="error"></span>
                                 <input class="btn submit" type="submit" value="Register">
                             </form>
@@ -131,7 +133,8 @@
         loginFormEl.style.transform = 'translateX(-300px)';
         registerFormEl.style.transform = 'translateX(-300px)';
     }
-
-
+    
 </script>
+
+<script src="account.js"></script>
 </html>
